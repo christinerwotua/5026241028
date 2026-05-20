@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\PegawaiDBController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,7 +24,7 @@ Route::get('biodata', [DosenController::class, 'biodata']);
 
 //Route untuk Menu Pertemuan 1 - 6
 Route::get('menu', [MenuController::class, 'index']);
-Route::get('idx', [MenuController::class, 'idx']); 
+Route::get('idx', [MenuController::class, 'idx']);
 Route::get('example', [MenuController::class, 'example']);
 Route::get('int', [MenuController::class, 'int']);
 Route::get('linktr', [MenuController::class, 'linktr']);
@@ -34,7 +35,7 @@ Route::get('pert5', [MenuController::class, 'pert5']);
 Route::get('respons', [MenuController::class, 'respons']);
 Route::get('temp', [MenuController::class, 'temp']);
 
-Route::get('/pegawai/{nama}', [PegawaiController::class, 'index']);
+Route::get('/pegawailama/{nama}', [PegawaiController::class, 'index']);
 Route::get('/formulir', [PegawaiController::class, 'formulir']);
 Route::post('/formulir/proses', [PegawaiController::class, 'proses']);
 
@@ -42,3 +43,6 @@ Route::post('/formulir/proses', [PegawaiController::class, 'proses']);
 Route::get('/blog', [BlogController::class, 'home']);
 Route::get('/blog/tentang', [BlogController::class, 'tentang']);
 Route::get('/blog/kontak', [BlogController::class, 'kontak']);
+
+//route CRUD (diambil dari tutorial #9)
+Route::get('/pegawai', [PegawaiDBController::class, 'index']);
