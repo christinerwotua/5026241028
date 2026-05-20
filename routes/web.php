@@ -22,8 +22,8 @@ Route::get('dosen', [DosenController::class, 'index']);
 Route::get('biodata', [DosenController::class, 'biodata']);
 
 //Route untuk Menu Pertemuan 1 - 6
-Route::get('menu', [MenuController::class, 'index']); //Route untuk menampilkan halaman menu utama yang berisi kumpulan link tugas pertemuan 1 - 6
-Route::get('idx', [MenuController::class, 'idx']); //Direct ke MenuController. Method idx untuk menampilkan halaman index, begitu pula untuk halaman lainnya
+Route::get('menu', [MenuController::class, 'index']);
+Route::get('idx', [MenuController::class, 'idx']); 
 Route::get('example', [MenuController::class, 'example']);
 Route::get('int', [MenuController::class, 'int']);
 Route::get('linktr', [MenuController::class, 'linktr']);

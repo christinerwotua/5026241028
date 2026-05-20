@@ -1,8 +1,7 @@
-<!-- Menghubungkan dengan view template master -->
+{{-- Petemuan 9 --}}
+
 @extends('master')
 
-<!-- isi bagian judul halaman -->
-<!-- cara penulisan isi section yang pendek -->
 @section('judul_halaman', 'Halaman Tentang')
 
 @section('title', 'BLOG : Halaman Tentang')
