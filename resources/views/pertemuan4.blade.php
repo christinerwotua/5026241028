@@ -80,7 +80,7 @@
             <!-- Tidak nemu icon yang sama 100% :) -->
             <!-- Gambar kiri -->
             <div class="col-md-4 image-container">
-                <img src="file:///C:/Users/christine%20rotua/Downloads/Image.png" class="feature-img" alt="Layout Image">
+                <img src="{{ asset('assets/assets/Image.png') }}" class="feature-img" alt="Layout Image">
             </div>
 
             <!-- kolom kanan -->

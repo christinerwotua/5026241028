@@ -62,7 +62,7 @@
   <div class="jumbotron profile-section">
     <div class="row align-items-center">
       <div class="col-md-4 text-center">
-        <img src="file:///C:/Users/christine%20rotua/Downloads/Christine%202026%20self%20potrait.jpeg" class="self-potrait img-thumbnail">
+        <img src="{{ asset('assets/assets/selfpotrait.jpeg') }}" class="self-potrait img-thumbnail" alt="Christine Self Potrait">
       </div>
       <div class="col-md-8">
         <h2 style="color: #ad1457;">About Me</h2>

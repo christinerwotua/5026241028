@@ -15,12 +15,12 @@
 <center>
     <h1>5026241028 Christine Rotua Deborah Hutabarat</h1>
     <p>
-        <a href="pertemuan5.html" target="_blank" class="btn btn-primary">
+        <a href="http://127.0.0.1:8000/pert5" target="_blank" class="btn btn-primary">
             Pertemuan 5
         </a>
     </p>
     <p>
-        <a href="linktree.html" target="_blank" class="btn btn-primary">
+        <a href="http://127.0.0.1:8000/linktr" target="_blank" class="btn btn-primary">
             Tugas Link Tree
         </a>
     </p>

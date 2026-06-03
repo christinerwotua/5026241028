@@ -76,7 +76,7 @@
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+            <img src="{{ asset('assets/assets/hero-img.png') }}" class="img-fluid animated" alt="Hero Image">
           </div>
         </div>
       </div>
@@ -137,7 +137,7 @@ Link in bio.</p>
           </div>
 
           <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-            <img src="assets/img/picture.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+            <img src="{{ asset('assets/assets/picture.jpg') }}" class="img-fluid" alt="Why Us" data-aos="zoom-in" data-aos-delay="100">
           </div>
         </div>
 

@@ -185,7 +185,7 @@
 
         <!-- kedua, mulai dari logo sampe tulisan dibawahnya -->
         <div class="text-center px-4 pt-3 pb-3">
-            <img src="assets/img/logoBI.png" alt="logoBI" class="rounded-circle mb-3 object-fit-contain" style="width: 25%; height: auto; aspect-ratio: 1 / 1;">
+           <img src="{{ asset('assets/assets/logoBI.png') }}" alt="logo" class="rounded-circle mb-3 object-fit-contain" style="width: 25%; height: auto; aspect-ratio: 1 / 1;">
             <h1 class="profile-title">KPw BI Jakarta</h1>
             <p class="profile-desc">Informasi Bank Indonesia DKI Jakarta</p>
         </div>

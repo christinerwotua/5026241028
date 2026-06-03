@@ -2,7 +2,7 @@
 
 <head>
     <title>RoboDog Kendali Jarak Jauh, Inovasi ITS bersama Indosat, Nokia, dan NVIDIA</title>
-    <link rel="stylesheet" type="text/css" href="mycss1.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/mycss1.css') }}">
 </head>
 
 
