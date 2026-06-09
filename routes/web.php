@@ -7,6 +7,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\MobilController;
 
 
 Route::get('/', function () {
@@ -62,3 +63,12 @@ Route::post('/siswa', [SiswaController::class, 'store'])->name('siswa.store');
 Route::get('/siswa/{nrp}/edit', [SiswaController::class, 'edit'])->name('siswa.edit');
 Route::put('/siswa/{nrp}', [SiswaController::class, 'update'])->name('siswa.update');
 Route::delete('/siswa/{nrp}', [SiswaController::class, 'destroy'])->name('siswa.destroy');
+
+//crud tabel mobil
+Route::get('/mobil', [MobilController::class, 'index']);
+Route::get('/mobil/tambah', [MobilController::class, 'tambah']);
+Route::post('/mobil/store', [MobilController::class, 'store']);
+Route::get('/mobil/edit/{id}', [MobilController::class, 'edit']);
+Route::post('/mobil/update', [MobilController::class, 'update']);
+Route::get('/mobil/hapus/{id}', [MobilController::class, 'hapus']);
+Route::get('/mobil/cari', [MobilController::class, 'cari']);
