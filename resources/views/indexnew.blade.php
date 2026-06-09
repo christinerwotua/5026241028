@@ -8,7 +8,8 @@
 
     <p>Cari Data Pegawai :</p>
         <form action="/pegawai/cari" method="GET">
-            <input type="text" name="cari" placeholder="Cari Pegawai .." class="form-control">
+            <input type="text" name="cari" id="cari" placeholder="Cari Pegawai .."
+            class="form-control" value="{{ old('cari') }}">
             <input type="submit" value="CARI" class="btn btn-success">
         </form>
 
