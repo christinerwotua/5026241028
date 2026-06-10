@@ -8,7 +8,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\MobilController;
-
+use App\Http\Controllers\nilaikuliahController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -72,3 +72,8 @@ Route::get('/mobil/edit/{id}', [MobilController::class, 'edit']);
 Route::post('/mobil/update', [MobilController::class, 'update']);
 Route::get('/mobil/hapus/{id}', [MobilController::class, 'hapus']);
 Route::get('/mobil/cari', [MobilController::class, 'cari']);
+
+//crud tabel mobil
+Route::get('/nilaikuliah', [nilaikuliahController::class, 'index'])->name('nilaikuliah.index');
+Route::get('/nilaikuliah/tambah', [nilaikuliahController::class, 'tambah'])->name('nilaikuliah.create');
+Route::post('/nilaikuliah/store', [nilaikuliahController::class, 'store'])->name('nilaikuliah.store');
